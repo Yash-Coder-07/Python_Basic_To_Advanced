@@ -12,5 +12,5 @@ age = "20"
 
 ### Input statment
 
-man = input("Hello what is your age")
-print(age)
+man = int(input("Hello what is your age"))
+print("Hello My age is ",man)
