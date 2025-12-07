@@ -56,3 +56,35 @@
 
 """ Question On the basis of String"""
 
+# Question Reverse a string
+# a = "SHERYIANS"
+# for i in range(len(a)-1,-1,-1):
+#     print(a[i])
+
+
+# Question Strng is palindrome or not   
+# a = input("Enter the string :")
+# b =""
+# for i in range(len(a)-1,-1,-1):
+#     b = b+a[i]
+
+# if b==a:
+#     print("Your string i splainrome")
+# else:
+#     print("Not palindrome")
+
+
+# Question count of alphabet , digit, special character
+
+# a = input("Enter the string :")
+# char =0
+# dig =0
+# schar =0
+# for i in a:
+#     if i.isdigit():
+#         dig +=1
+#     elif i.isalpha():
+#         char +=1
+#     else:
+#         schar +=1
+# print(f"Digit is {dig} special Character is {schar} and character is {char}")
