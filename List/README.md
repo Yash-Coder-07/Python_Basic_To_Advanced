@@ -161,15 +161,3 @@ new_numbers = numbers.copy()
 numbers.clear()
 ```
 
----
-
-# ⭐ Common Interview Questions on Lists
-
-1. Print positive and negative elements separately.
-2. Find mean of list elements.
-3. Find the greatest element & print its index.
-4. Find the second greatest element.
-5. Check if a list is sorted.
-
----
-
