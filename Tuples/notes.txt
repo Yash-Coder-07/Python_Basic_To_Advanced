@@ -1,0 +1,147 @@
+## ⭐ What is a Tuple?
+
+A **tuple** is an ordered collection of elements in Python, similar to a list, but **immutable**.
+Tuples are created using **parentheses `( )`**.
+
+Example:
+
+```python
+t = (1, 2, 3, 4)
+```
+
+---
+
+## ⭐ Tuple Properties (Very Important)
+
+### ✔ 1. Immutable
+
+* You **cannot change** values once the tuple is created.
+* No modification, no insertion, no deletion.
+
+### ✔ 2. Allows Duplicates
+
+* Duplicate values are allowed.
+
+### ✔ 3. Ordered
+
+* Elements maintain insertion sequence.
+* Can be accessed by index.
+
+### ✔ 4. Heterogeneous
+
+* Tuples can store **different data types**:
+
+```python
+b = (1, 2, 3, 5, 5, 6.7, 89, "Hello", True)
+```
+
+---
+
+# ⭐ Traversing a Tuple
+
+Tuple traversal is the **same as lists**.
+
+### Using index:
+
+```python
+for i in range(len(t)):
+    print(t[i])
+```
+
+### Directly:
+
+```python
+for x in t:
+    print(x)
+```
+
+---
+
+# ⭐ Tuple Methods (Only 2 Important Ones)
+
+Given:
+
+```python
+t = (5, 2, 9, 1, 5, 6)
+```
+
+### ✔ `index(x)`
+
+Returns the index of first occurrence of x.
+
+```python
+t.index(9)   # → 2
+```
+
+### ✔ `count(x)`
+
+Counts how many times x appears.
+
+```python
+t.count(5)   # → 2
+```
+
+These are the **only two major methods** of tuples.
+
+---
+
+# ⭐ Tuple Unpacking
+
+You can assign tuple values to variables in a single step:
+
+```python
+a, b, c, d = (1, 2, 3, 4)
+print(b)     # 2
+```
+
+All variables become integers.
+
+---
+
+# ⭐ Single Element Tuple — Very Important Interview Point
+
+To create a single-element tuple, **you must add a comma**.
+
+❌ Not a tuple:
+
+```python
+a = (1)
+# type → int
+```
+
+✔ Correct tuple:
+
+```python
+a = (1,)
+# type → tuple
+```
+
+---
+
+# ⭐ Example Code from Your Notes
+
+```python
+a = (1, 2, 3, 4)
+print(type(a))
+
+b = (1, 2, 3, 5, 5, 6.7, 89, "Hello", True)
+print(b)
+
+index = b.index(6.7)
+print(index)
+
+count = b.count(5)
+print(count)
+
+# Unpacking
+a, b, c, d = (1, 2, 3, 4)
+print(b)
+print(type(b))
+
+# Single element tuple
+a = (1,)
+print(type(a))
+```
+
+---
+
