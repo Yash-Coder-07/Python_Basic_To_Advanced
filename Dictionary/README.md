@@ -3,7 +3,6 @@
 # 🟪 Python Dictionaries
 
 ## ⭐ What is a Dictionary?
-
 A **dictionary** is a key–value data structure in Python.
 It stores data in pairs like:
 
