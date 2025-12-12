@@ -1,110 +1,163 @@
-content: |
-  # 🟪 Python Dictionaries
+# Python Dictionary — Notes
 
-  ## ⭐ What is a Dictionary?
+## What is a Dictionary?
 
-  A **dictionary** is a key–value data structure in Python.
-  It stores data in pairs like:
+A dictionary in Python is a collection of key–value pairs.
+It uses the syntax:
 
-      key → value
+```
+key: value
+```
 
-  Dictionaries use curly braces `{ }`.
+Example:
 
-  Example:
+```python
+student = {"name": "John", "age": 20}
+```
 
-      student = {"name": "John", "age": 20}
+---
 
-  ---
+## Dictionary Features
 
-  # ⭐ Dictionary Powers (Properties)
+### 1. Mutable
 
-  ### 🔹 1. Mutable
-  - You can change, add, or remove key-value pairs.
+* You can add, update, or delete key–value pairs.
+* Keys cannot be changed, only values can.
 
-  ### 🔹 2. Unique Keys
-  - Keys must be unique.
-  - Values can be duplicates.
+### 2. Keys Must Be Unique
 
-  ### 🔹 3. Insertion Ordered
-  - Dictionaries preserve insertion order (Python 3.7+).
+* Duplicate keys are not allowed.
+* Duplicate values are allowed.
 
-  ### 🔹 4. Fully Heterogeneous
-  - Keys and values can be any data type:
+### 3. Maintains Insertion Order
 
-      d = {1: "Hello", "x": 100, 3.5: [1, 2, 3], "info": {"city": "Mumbai"}}
+* Python dictionaries preserve the order of insertion.
 
-  ---
+### 4. Heterogeneous
 
-  # ⭐ Dictionary Syntax and Working
+* Keys and values can be of any datatype, including lists or other dictionaries.
 
-      student = {"name": "John", "age": 20}
-      print(student["name"])   # Output: John
+---
 
-  Keys cannot be changed once created.
+## Dictionary Syntax
 
-  ---
+### Creating a Dictionary
 
-  # ⭐ Dictionary Traversing
+```python
+student = {"name": "John", "age": 20}
+```
 
-  ### Loop through keys:
-      for k in numbers:
-          print(k, numbers[k])
+### Accessing Values
 
-  ### Loop through values:
-      for val in numbers.values():
-          print(val)
+```python
+print(student["name"])  # Output: John
+```
 
-  ### Loop through key–value pairs:
-      for k, v in numbers.items():
-          print(k, v)
+---
 
-  ---
+## CRUD Operations
 
-  # ⭐ Dictionary Methods
+### Update Value
 
-      d = {10: 100, 20: 200, 30: 300}
+```python
+student["age"] = 21
+```
 
-  ✔ d.get(key)  
-  ✔ d.update({key: value})  
-  ✔ d[key] = value  
-  ✔ del d[key]  
-  ✔ d.clear()  
-  ✔ d.copy()  
+### Add New Key–Value Pair
 
-  ---
+```python
+student["city"] = "Pune"
+```
 
-  # ⭐ CRUD Examples
+### Using update()
 
-      d[10] = 1000
-      d[60] = 600
-      del d[40]
+```python
+student.update({"grade": "A"})
+```
 
-  ---
+### Delete Items
 
-  # ⭐ Dictionary Interview Questions
+```python
+del student["age"]
+student.__delitem__("name")
+```
 
-  - Merge two dictionaries  
-  - Sum all values  
-  - Count frequency of list elements  
-  - Combine dictionaries by adding values  
-  - Convert lists to dictionary  
+---
 
-  ---
+## Traversing a Dictionary
 
-  # ⭐ Example Code
+### Loop Over Keys
 
-      d = {10:100, 20:200, 30:300, 40:400}
+```python
+d = {10: 100, 20: 200, 30: 300}
 
-      print(d[20])
-      d[10] = 1000
-      d[50] = 500
-      del d[40]
+for key in d:
+    print(key, d[key])
+```
 
-      for i in d:
-          print(i, d[i])
+### Loop Over Values
 
-      for val in d.values():
-          print(val)
+```python
+for value in d.values():
+    print(value)
+```
 
-      b = d.copy()
-      print(d.get(30))
+### Loop Over Key–Value Pairs
+
+```python
+for k, v in d.items():
+    print(k, v)
+```
+
+---
+
+## Common Dictionary Methods
+
+| Method          | Description             |
+| --------------- | ----------------------- |
+| `clear()`       | Removes all items       |
+| `copy()`        | Returns a shallow copy  |
+| `get(key)`      | Returns value safely    |
+| `items()`       | Returns key–value pairs |
+| `keys()`        | Returns all keys        |
+| `values()`      | Returns all values      |
+| `update({...})` | Adds or updates items   |
+
+### Shallow Copy vs Deep Copy
+
+```python
+b = d.copy()   # Shallow copy
+b = d          # Deep copy (same reference)
+```
+
+---
+
+## Practice Questions
+
+1. Merge two Python dictionaries.
+2. Sum all values in a dictionary.
+3. Count frequency of elements using a dictionary.
+4. Combine two dictionaries by adding values of common keys.
+
+---
+
+## Example Codes
+
+### Merge Two Dictionaries
+
+```python
+d1 = {1: 10, 2: 20}
+d2 = {2: 30, 3: 40}
+
+merged = {**d1, **d2}
+print(merged)
+```
+
+### Sum of Dictionary Values
+
+```python
+d = {1: 10, 2: 20, 3: 30}
+print(sum(d.values()))
+```
+
+---
