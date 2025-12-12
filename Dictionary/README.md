@@ -163,5 +163,3 @@ print(sum(d.values()))
 ---
 
 
-Just tell me!
-
