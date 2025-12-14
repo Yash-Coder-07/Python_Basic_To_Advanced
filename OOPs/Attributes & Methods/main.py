@@ -1,7 +1,7 @@
 class  Animal:
     name = "Lion" # class Attribute
 
-    def __init__(self,age):
+    def __init__(self,age,type):
         self.age = age # instance attribute which is with self
 
     def show(self): # instance Method which is with self 
