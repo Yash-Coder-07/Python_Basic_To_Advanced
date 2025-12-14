@@ -1,9 +1,3 @@
-Below is a **clean, professional, README.md–ready version** of your **OOPS (Object-Oriented Programming) notes in Python**, written from your slides + code, simplified and well-structured.
-
-You can **directly paste this into `README.md`** without removing anything.
-
----
-
 # Object-Oriented Programming (OOPS) in Python
 
 ## What is OOPS?
