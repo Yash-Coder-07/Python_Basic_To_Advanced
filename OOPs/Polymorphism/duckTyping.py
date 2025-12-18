@@ -11,4 +11,4 @@ obj = Animal()
 obj2 = Human()
 
 obj.show()
-obj2.show() 
+obj2.show()  
