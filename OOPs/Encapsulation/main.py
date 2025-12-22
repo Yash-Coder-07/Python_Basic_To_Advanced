@@ -33,12 +33,12 @@
 
 """ To access above using private modifier """
 
-class Factory:
-    __a = "Pune"
+# class Factory:
+#     __a = "Pune"
 
-    def show(self):
-        print(Factory.__a)  # Access using class name but we cant change it
+#     def show(self):
+#         print(Factory.__a)  # Access using class name but we cant change it
     
-obj = Factory()
-obj.show()
+# obj = Factory()
+# obj.show()
 

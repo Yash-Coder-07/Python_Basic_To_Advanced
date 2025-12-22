@@ -3,6 +3,7 @@ class  Animal:
 
     def __init__(self,age,type):
         self.age = age # instance attribute which is with self
+        self.type = type
 
     def show(self): # instance Method which is with self 
         print(f"Your animal is here {self.age}")    
@@ -18,6 +19,8 @@ class  Animal:
     def static():
         print("I am static method not targeting class and object")
     
-obj = Animal(12)
+obj = Animal(12,"wild")
+obj.show()
+Animal.hello()
 
 
