@@ -37,15 +37,3 @@
 
 # add(5,8)
 
-# def addition(a,b):
-#     print(a+b)
-
-# addition(12,34)
-
-def addition(*args):
-    sum =0
-    for i in args:
-        sum = sum + i
-    return sum
-
-print(addition(12,12,13,78,98,6,5,4,7,8,2,152,2,5))
